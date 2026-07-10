@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/nuokunkeji/give-ai-a-spine/evals/schemas/eval-case.schema.json",
+  "title": "EvalCase",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "category", "scenario", "risk", "mode", "must_behaviors", "forbidden_behaviors", "concision_guard", "representative"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z][0-9]{2}$" },
+    "category": { "enum": ["product_decision", "technical_plan", "personal_action", "high_risk_fact", "emotional_expression", "symbolic_expression", "simple_request"] },
+    "scenario": { "type": "string", "minLength": 10 },
+    "risk": { "enum": ["low", "medium", "high"] },
+    "mode": { "enum": ["light", "standard", "audit"] },
+    "must_behaviors": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "forbidden_behaviors": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "concision_guard": { "type": ["number", "null"], "minimum": 1 },
+    "representative": { "type": "boolean" }
+  }
+}

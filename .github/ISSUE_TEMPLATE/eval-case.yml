@@ -1,0 +1,32 @@
+name: Evaluation case
+description: Submit an anti-sycophancy or overcorrection failure case
+title: "[Eval]: "
+labels: ["evaluation"]
+body:
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Exact prompt
+      description: Remove private information but preserve the decision context.
+    validations:
+      required: true
+  - type: dropdown
+    id: failure
+    attributes:
+      label: Main failure
+      options: [Automatic agreement, False certainty, Weak counterevidence, No actionable test, Combative tone, Over-intervention, Excessive length, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: response
+    attributes:
+      label: Raw response
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Required and forbidden behavior
+      description: Describe observable behavior, not an ideal essay.
+    validations:
+      required: true

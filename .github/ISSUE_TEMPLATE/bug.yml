@@ -1,0 +1,38 @@
+name: Bug report
+description: Report installation or runtime behavior that is reproducible
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Agent
+      options: [Codex, Claude Code, Cursor, Gemini CLI, OpenCode, Other]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Spine version
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: secrets
+    attributes:
+      label: Safety
+      options:
+        - label: I removed credentials, tokens, and private data.
+          required: true

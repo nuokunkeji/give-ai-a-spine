@@ -1,0 +1,12 @@
+{
+  "name": "give-ai-a-spine",
+  "version": "0.1.0",
+  "description": "A reality-check skill that reduces automatic agreement and turns important decisions into evidence-backed action.",
+  "author": {
+    "name": "nuokunkeji",
+    "url": "https://github.com/nuokunkeji"
+  },
+  "homepage": "https://github.com/nuokunkeji/give-ai-a-spine",
+  "repository": "https://github.com/nuokunkeji/give-ai-a-spine",
+  "license": "MIT"
+}

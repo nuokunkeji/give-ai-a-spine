@@ -1,0 +1,20 @@
+{
+  "name": "give-ai-a-spine",
+  "interface": {
+    "displayName": "Give AI a Spine"
+  },
+  "plugins": [
+    {
+      "name": "give-ai-a-spine",
+      "source": {
+        "source": "local",
+        "path": "./plugins/give-ai-a-spine"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

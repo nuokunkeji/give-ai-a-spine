@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Spine icon</title>
+  <rect width="128" height="128" rx="28" fill="#171717"/>
+  <path d="M64 19v90" stroke="#F7F1E8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M39 36h50M34 55h60M34 74h60M39 93h50" stroke="#C4473A" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="64" cy="64" r="8" fill="#F7F1E8"/>
+</svg>

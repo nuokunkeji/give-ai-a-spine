@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
+  "name": "give-ai-a-spine",
+  "description": "Give your AI a spine. Less agreement, more honest work.",
+  "owner": {
+    "name": "nuokunkeji"
+  },
+  "plugins": [
+    {
+      "name": "give-ai-a-spine",
+      "source": "./plugins/give-ai-a-spine",
+      "description": "A reality-check skill for consequential decisions.",
+      "category": "productivity"
+    }
+  ]
+}

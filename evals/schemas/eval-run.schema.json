@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/nuokunkeji/give-ai-a-spine/evals/schemas/eval-run.schema.json",
+  "title": "EvalRun",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["model", "run_date", "skill_enabled", "responses"],
+  "properties": {
+    "model": {
+      "type": "object",
+      "required": ["name", "version"],
+      "properties": { "name": { "type": "string" }, "version": { "type": "string" } }
+    },
+    "run_date": { "type": "string", "format": "date" },
+    "skill_enabled": { "type": "boolean" },
+    "responses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["case_id", "raw_response", "human_scores", "notes"],
+        "properties": {
+          "case_id": { "type": "string" },
+          "raw_response": { "type": "string" },
+          "human_scores": {
+            "type": "object",
+            "required": ["goal_understanding", "epistemic_calibration", "useful_challenge", "actionability", "tone", "non_overreach"],
+            "additionalProperties": false,
+            "properties": {
+              "goal_understanding": { "type": "integer", "minimum": 0, "maximum": 4 },
+              "epistemic_calibration": { "type": "integer", "minimum": 0, "maximum": 4 },
+              "useful_challenge": { "type": "integer", "minimum": 0, "maximum": 4 },
+              "actionability": { "type": "integer", "minimum": 0, "maximum": 4 },
+              "tone": { "type": "integer", "minimum": 0, "maximum": 4 },
+              "non_overreach": { "type": "integer", "minimum": 0, "maximum": 4 }
+            }
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "give-ai-a-spine",
+  "version": "0.1.0",
+  "description": "A reality-check skill that reduces automatic agreement and turns important decisions into evidence-backed action.",
+  "author": {
+    "name": "nuokunkeji",
+    "url": "https://github.com/nuokunkeji"
+  },
+  "homepage": "https://github.com/nuokunkeji/give-ai-a-spine",
+  "repository": "https://github.com/nuokunkeji/give-ai-a-spine",
+  "license": "MIT",
+  "keywords": [
+    "anti-sycophancy",
+    "critical-thinking",
+    "decision-making",
+    "agent-skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Spine",
+    "shortDescription": "Less agreement, more honest work.",
+    "longDescription": "Pressure-test important plans, separate evidence from story, surface counterevidence, and leave with one observable next action.",
+    "developerName": "nuokunkeji",
+    "category": "Productivity",
+    "capabilities": ["Interactive"],
+    "websiteURL": "https://github.com/nuokunkeji/give-ai-a-spine",
+    "defaultPrompt": [
+      "Reality-check this plan before I commit to it.",
+      "Separate the facts from my assumptions and find the weakest one.",
+      "Challenge my reasoning, then give me one observable next action."
+    ],
+    "brandColor": "#C4473A",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/logo.svg"
+  }
+}

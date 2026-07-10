@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" role="img" aria-labelledby="title desc">
+  <title id="title">Spine</title>
+  <desc id="desc">Give your AI a spine. Less agreement, more honest work.</desc>
+  <rect width="760" height="180" rx="32" fill="#171717"/>
+  <g transform="translate(34 26)">
+    <path d="M64 0v128" stroke="#F7F1E8" stroke-width="12" stroke-linecap="round"/>
+    <path d="M39 20h50M34 46h60M34 72h60M39 98h50" stroke="#C4473A" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <text x="176" y="83" fill="#F7F1E8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="70" font-weight="700">SPINE</text>
+  <text x="180" y="124" fill="#CFC7BA" font-family="Inter, Arial, sans-serif" font-size="23">Less agreement, more honest work.</text>
+</svg>

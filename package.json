@@ -1,0 +1,34 @@
+{
+  "name": "give-ai-a-spine",
+  "version": "0.1.0",
+  "description": "Give your AI a spine. Less agreement, more honest work.",
+  "type": "module",
+  "license": "MIT",
+  "author": "nuokunkeji",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuokunkeji/give-ai-a-spine.git"
+  },
+  "homepage": "https://github.com/nuokunkeji/give-ai-a-spine#readme",
+  "bin": {
+    "give-ai-a-spine": "scripts/install.mjs"
+  },
+  "files": [
+    "plugins/give-ai-a-spine/skills/reality-check",
+    "scripts/install.mjs",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "validate": "node scripts/validate-project.mjs && node scripts/validate-evals.mjs && node scripts/check-links.mjs && node scripts/scan-secrets.mjs",
+    "scorecard": "node scripts/score-evals.mjs",
+    "eval:codex": "node scripts/run-codex-evals.mjs",
+    "eval:compile": "node scripts/compile-eval-runs.mjs",
+    "check": "npm run test && npm run validate && npm run scorecard"
+  }
+}
