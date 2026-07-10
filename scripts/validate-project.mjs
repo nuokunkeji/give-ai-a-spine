@@ -30,7 +30,7 @@ const marketplace = JSON.parse(readFileSync(resolve(root, ".agents/plugins/marke
 assert.equal(marketplace.plugins[0].name, plugin.name);
 assert.equal(marketplace.plugins[0].source.path, "./plugins/give-ai-a-spine");
 
-const skill = readFileSync(resolve(root, "plugins/give-ai-a-spine/skills/reality-check/SKILL.md"), "utf8");
+const skill = readFileSync(resolve(root, "plugins/give-ai-a-spine/skills/reality-check/SKILL.md"), "utf8").replace(/\r\n/g, "\n");
 assert.match(skill, /^---\nname: reality-check\ndescription: .+\n---\n/);
 assert.ok(!skill.includes("TODO"));
 assert.ok(skill.length < 5000, "SKILL.md should stay compact");
